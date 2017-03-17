@@ -8,7 +8,7 @@ class Classifier(BaseEstimator):
         pass
 
     def fit(self, X, y):
-        self.clf = RandomForestClassifier()
+        self.clf = RandomForestClassifier() # 可以用其他的classifier来替代这里的RandomForestClassifier().
         self.clf.fit(X, y)
 
     def predict(self, X):
